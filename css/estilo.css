@@ -1,0 +1,857 @@
+*{
+	margin: 0;
+	padding: 0;
+  font-family: 'Bebas Neue', cursive;
+   font-size: 15px;
+}
+header{
+   z-index: 0;
+}
+body {
+   overflow-x: hidden;
+}
+
+ul {
+   display: flex;
+
+}
+li {
+   list-style: none;
+   margin: 1rem;
+   padding: 0.5 rem;
+   border-radius: 5px;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+a:hover{
+   color: hotpink;
+}
+
+li a:hover{
+   color: hotpink;
+   transition: all .3s;
+}
+ul ul {
+   position: relative;
+   display: none;
+}
+ul ul li {
+   display: block;
+   width:80px;
+   height: 10px;
+   padding: 5px;
+
+}
+ul ul li a {
+	color: black;
+	text-decoration: none;
+}
+ul li:hover ul {
+	position: absolute;
+   display:block;
+  /* background-color: pink;*/
+  background-image: linear-gradient(to top, pink, #FBE5E5);
+   border-radius: 8px;
+   text-decoration: none;
+   transition: all .3s;
+}
+
+h1{
+   color: hotpink;
+}
+
+.imgDraw img {
+   img sty
+}
+
+.titulo1 h1{
+   color: hotpink;
+}
+
+/*INDEX*/
+.contenido {  
+    display: grid;
+    grid-template-columns: 2fr 12fr;
+    grid-template-rows: auto;*/
+    grid-auto-columns: 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "shingeki shingeki"
+      "eren eren"
+      "snk_tex snk_tex"
+      "reac reac"
+      "video video"
+      "euphoria euphoria"
+      "euphoria_tx euphoria_tx"
+      "img_eu img_eu"
+      "footer footer";
+
+
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+  }
+
+.footer, .shingeki, .snk_tex, .reac, .video, .eren, .img_eu, .euphoria, .euphoria_tx, .header{
+  /* background-color: pink;*/
+}
+.header {
+  /* background-color: pink;*/
+  background-image: linear-gradient(pink, #FBE5E5);
+   grid-area: header;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+}
+.header img{
+   width: 50px;
+   height: auto;
+}
+.shingeki {
+   grid-area: shingeki;
+   background-image: url("https://areajugones.sport.es/wp-content/uploads/2020/05/shingeki-no-kyojin-temporada-4-min.jpg");
+   height: 600px;
+   background-attachment: fixed; /* EL SECRETO DEL PARALLAX */
+   background-position: center; /* UBICACIÓN DE LA IMAGEN */
+   background-repeat: no-repeat; /* SI NECESITAMOS REPETIR LA IMAGEN */
+   background-size: cover; /* ACOMODAR EL TAMAÑO DE LA IMAGEN AL CONTENEDOR */
+}*/
+.shingeki{
+   grid-area: shingeki;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   text-align: center; 
+}
+.shingeki h1{
+   color: white;
+   text-align: center;
+   font-size: 50px;
+   text-shadow:-2px -2px 1px #000, -2px -2px 1px #000, -2px -2px 1px #000 ;
+}
+.eren{
+   grid-area: eren;
+   justify-content: center;
+   display: flex;
+}
+.eren img {
+   width: 600px;
+   height: auto;
+   padding: 5px;
+}
+.snk_tex {
+   grid-area: snk_tex;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+.snk_tex p{
+   font-size: 30px;
+   color: black;
+   padding: 15px;
+}
+.reac{
+   grid-area: reac;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+.reac h2{
+   font-size: 40px;
+   color: green;
+}
+.video {
+   grid-area: video;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+   padding: 10px;
+}
+.video iframe{
+   width: 600px;
+   height: 320px;
+   padding: 5px;
+}
+.img_eu {
+   grid-area: img_eu;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+   padding: 5px;
+}
+.img_eu img{
+   width: 600px;
+   height: auto;
+   padding: 5px;
+}
+
+.euphoria{
+  grid-area: euphoria;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+
+}
+.euphoria h1{
+ text-align: center;
+   font-size: 40px;
+   color: purple;
+
+
+}
+.euphoria_tx{
+   grid-area: euphoria_tx;
+   text-align: center;
+   padding: 15px;
+}
+
+.euphoria_tx p{
+   font-size: 30px;
+  
+}
+
+/*FOOTER*/
+.footer {
+   grid-area: footer;
+     display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   /*background-color: pink;*/
+   background-image: linear-gradient(pink, #FBE5E5);
+   padding: 0px 5rem;
+}
+footer .redes{
+   text-align: center;
+
+}
+.footer_logo {
+   width: 50px;
+   height: auto;
+}
+.redes img{
+   width: 30px;
+   height: auto;
+}
+.redes h3{
+   font-size: 10px;
+}
+
+/*SOBRE MI*/
+.contenido_index{
+   display: grid;
+   grid-template-columns: 2fr 12fr;
+   grid-auto-columns: 3fr;
+   gap: 0px 0px;
+   grid-auto-flow: column;
+   grid-template-areas:
+   "header header"
+   "sobremi sobremi"
+   "sobremi_text sobremi_text"
+   "tiktok_tit tiktok_tit"
+   "tiktok tiktok"
+   "videos_tit videos_tit"
+   "videos videos"
+   "footer footer";
+   width: 100%;
+   height: auto;
+   grid-gap: 10px;
+}
+
+.sobremi_text, .sobremi, .tiktok_tit, .tiktok, .videos.tit, .videos {
+/*background: greenyellow;*/
+}
+
+.sobremi {
+   grid-area: sobremi;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding: 5px;
+ }
+ .sobremi h1 {
+   font-size: 40px;
+   color: hotpink;
+ }
+ .sobremi_text{
+   grid-area: sobremi_text;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   padding: 5px;
+
+ }
+
+ .sobremi_text p{
+   font-size: 20px;
+ }
+
+ .tiktok_tit{
+   grid-area: tiktok_tit;
+   display: flex;
+   justify-content: center;
+   text-align: center;  
+ }
+ .tiktok_tit h1{
+   font-size: 40px;
+   color: hotpink;
+ }
+
+ .tiktok{
+   grid-area: tiktok;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   padding: 10px;
+ }
+ .tiktok blockquote{
+   width: 400px;
+   height: 800px;
+   padding: 5px;
+}
+ .videos_tit{
+   grid-area: videos_tit;
+   display: flex;
+   justify-content: center;
+   text-align: center;  
+ }
+ .videos_tit h1{
+   font-size: 40px;
+   color: hotpink;
+ }
+ .videos {
+   grid-area: videos;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 10px;
+ }
+ .videos iframe{
+   width: 600px;
+   height: 320px;
+   padding: 5px;
+}
+
+
+/*MAQUILLAJE*/
+.contenido_makeup{
+   display: grid;
+   grid-template-columns: 2fr 12fr;
+   grid-auto-columns: 3fr;
+   gap: 0px 0px;
+   grid-auto-flow: column;
+   grid-template-areas: 
+   "header header"
+   "maquillaje maquillaje"
+   "imgMk imgMk"
+   "imgMk2 imgMk2"
+   "imgMk3 imgMk3"
+   "footer footer";
+   width: 100%;
+   height: auto;
+   grid-gap: 5px;
+}
+.maquillaje, .imgMk, .imgMk2, .imgMk3{
+  /* background-color: pink;*/
+}
+.maquillaje{
+   grid-area: maquillaje;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.maquillaje h1{
+   font-size: 50px;
+}
+.imgMk {
+   grid-area: imgMk;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;  
+}
+.imgMk img{
+   width: 300px;
+   height: auto;
+   padding: 5px;
+}
+.imgMk2 {
+   grid-area: imgMk2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;  
+}
+.imgMk2 img{
+   width: 300px;
+   height: auto;
+   padding: 5px;
+}
+
+.imgMk3 {
+   grid-area: imgMk3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;  
+}
+.imgMk3 img{
+   width: 300px;
+   height: auto;
+   padding: 5px;
+}
+
+#efecto img:hover {
+  transform: scale(1.15); }
+
+/*ILUSTRACIONES*/
+.contenido_draw{
+    display: grid;
+    grid-template-columns: 2fr 12fr;
+    grid-auto-columns: 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "header header"
+      "draw draw"
+      "imgDraw imgDraw"
+      "imgDraw2 imgDraw2"
+      "imgDraw3 imgDraw3"
+      "footer footer";
+    width: 100%;
+    height: auto;
+    grid-gap: 5px;
+}
+.draw, .imgDraw, .imgDraw2, .imgDraw3{
+   /*background-color: pink;*/
+}
+.draw{
+   grid-area: draw;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.draw h1{
+   font-size: 50px;
+}
+.imgDraw{
+    grid-area: imgDraw;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+   padding: 5px;  
+}
+.imgDraw img {
+   width: 300px;
+   height: auto;
+   padding: 5px; 
+}
+.imgDraw2{
+    grid-area: imgDraw2;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 5px;  
+}
+.imgDraw2 img {
+   width: 300px;
+   height: auto;
+   padding: 5px; 
+}
+.imgDraw3{
+    grid-area: imgDraw3;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+   padding: 5px;  
+}
+.imgDraw3 img {
+   width: 300px;
+   height: auto;
+   padding: 5px; 
+}
+
+/*SOBRE MI
+
+/ANIMACIONES/
+.animate_animated.animate_flash {
+  --animate-duration: 3s;
+}
+.animate_animated.animate_fadeIn {
+    --animate-duration: 5s;
+}
+.animate_animated.animate_bounceIn{
+    --animate-duration: 10s;
+}
+.animate_animated.animate_fadeInUp{
+    --animate-duration: 5s;
+}
+/*MEDIA QUERIE MOBILE*/
+@media only screen and (max-width:  768px){
+   body {
+      background-color: white;
+   }
+   /*INDEX*/
+   .contenido{
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "shingeki shingeki"
+      "eren eren"
+      "snk_tex snk_tex"
+      "reac reac"
+      "video video"
+      "euphoria euphoria"
+      "euphoria_tx euphoria_tx"
+      "img_eu img_eu"
+      "footer footer";
+ grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto auto auto auto auto;
+}
+
+.header{
+   grid-area: header;
+   display: block;
+   background-color: #CBC3E3;
+}
+.shingeki{
+   grid-area: shingeki;
+}
+.shingeki h1{
+   font-size: 30px;
+   text-align: center;
+}
+.eren{
+   grid-area: eren;
+   display: grid;
+    flex-direction: column;
+}
+.snk_tex{
+   grid-area: snk_tex;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.reac{
+   grid-area: reac;
+   display: flex;
+   flex-direction: column;
+}
+.video{
+   grid-area: video;
+    flex-direction: column;
+}
+.euphoria{
+   grid-area: euphoria;
+}
+.euphoria_tex{
+   grid-area: euphoria_tex;
+}
+.img_eu{
+   grid-area: img_eu;
+   display: flex;
+    flex-direction: column;
+}
+.footer{
+   grid-area: footer;
+   background-color: #CBC3E3;
+   /*display: flex;
+   flex-direction: column;*/
+}
+.reac h2 {
+   font-size: 25px;
+   text-align: center;
+}
+.snk_tex p{
+   text-align: center;
+}
+.eren img {
+   width: 350px;
+   height: auto;
+}
+.img_eu img {
+   width: 350px;
+   height: auto;
+}
+.video iframe{
+   width: 350px;
+   height: auto;
+}
+.euphoria h1{
+   font-size: 25px;
+}
+
+/*ILUSTRACION*/
+.contenido_draw{
+    display: grid;
+    grid-template-columns: 2fr 12fr;
+   /* grid-template-rows: 200px 800px 400px 400px 200px;*/
+    grid-auto-columns: 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "header header"
+      "draw draw"
+      "imgDraw imgDraw"
+      "imgDraw2 imgDraw2"
+      "imgDraw3 imgDraw3"
+      "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto auto auto auto;
+}
+.draw{
+   grid-area: draw;
+}
+.imgDraw{
+    grid-area: imgDraw;
+       flex-direction: column;
+}
+.imgDraw2{
+    grid-area: imgDraw2;
+       flex-direction: column;
+}
+.imgDraw3{
+    grid-area: imgDraw3;
+       flex-direction: column;
+ }
+
+.imgDraw img {
+   
+}
+}
+@media only screen and (max-width:  768px){
+   body {
+      background-color: white;
+   }
+/*SOBRE MI*/
+.contenido_index{
+   display: grid;
+   grid-template-areas:
+   "header header"
+   "sobremi sobremi"
+   "sobremi_text sobremi_text"
+   "tiktok_tit tiktok_tit"
+   "tiktok tiktok"
+   "videos_tit videos_tit"
+   "videos videos"
+   "footer footer";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+.header{
+   grid-area: header;
+}
+.sobremi {
+   grid-area: sobremi;
+   
+ }
+ .sobremi h1 {
+   font-size: 20px;
+   text-align: center;
+ }
+ .sobremi_text{
+   grid-area: sobremi_text;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .sobremi_text p{
+   text-align: center;
+ }
+
+ .tiktok_tit{
+   grid-area: tiktok_tit;
+   display: flex;
+
+ }
+ .tiktok_tit h1{
+  font-size: 20px;
+  color: hotpink;
+ }
+
+ .tiktok{
+   grid-area: tiktok;
+  display: flex;
+   flex-direction: column;
+
+ }
+ .tiktok blockquote{
+   width: 350px;
+   height: auto;
+}
+ .videos_tit{
+   grid-area: videos_tit;
+   display: flex;
+   flex-direction: column;
+ }
+ .videos_tit h1{
+   font-size: 30px;
+   text-align: center;
+ }
+ .videos {
+   grid-area: videos;
+   display: flex;
+   flex-direction: column;
+ }
+ .videos iframe{
+   width: auto;
+   height: 200px;
+}
+.footer{
+   grid-area: footer;
+}
+
+
+
+
+/*MEDIA QUERIE TABLET*/
+@media only screen and (max-width:  769px) and (max-width:  1023px){
+   body {
+      background-color: white;
+   }
+   .contenido{
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "shingeki shingeki shingeki shingeki shingeki shingeki"
+      "eren eren eren eren eren eren"
+      "snk_tex snk_tex snk_tex snk_tex snk_tex snk_tex"
+      "reac reac reac reac reac reac"
+      "video video video video video video"
+      "euphoria euphoria euphoria euphoria euphoria euphoria"
+      "euphoria_tx euphoria_tx euphoria_tx euphoria_tx euphoria_tx euphoria_tx"
+      "img_eu img_eu img_eu img_eu img_eu img_eu"
+      "footer footer footer footer footer footer";
+ grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto auto auto auto auto;
+}
+.header{
+   grid-area: header;
+   background-color: lightgreen;
+  /* justify-content: center;
+ flex-direction: row;*/
+}
+.shingeki{
+   grid-area: shingeki;
+}
+.eren{
+   grid-area: eren;
+    flex-direction: column;
+}
+.snk_tex{
+   grid-area: snk_tex;
+}
+.reac{
+   grid-area: reac;
+}
+.video{
+   grid-area: video;
+    flex-direction: column;
+}
+.euphoria{
+   grid-area: euphoria;
+}
+.euphoria_tex{
+   grid-area: euphoria_tex;
+}
+.img_eu{
+   grid-area: img_eu;
+    flex-direction: column;
+}
+.footer{
+   grid-area: footer;
+   background-color: lightgreen;
+}
+
+/*LO DEMÁS*/
+.contenido_draw{
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "draw draw draw draw draw draw "
+      "imgDraw imgDraw imgDraw imgDraw imgDraw imgDraw"
+      "imgDraw2 imgDraw2 imgDraw2 imgDraw2 imgDraw2 imgDraw2"
+      "imgDraw3 imgDraw3 imgDraw3 imgDraw3 imgDraw3 imgDraw3"
+      "footer footer footer footer footer footer";
+ grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto auto auto auto auto;
+}
+.header{
+   grid-area: header;
+  /* justify-content: center;
+ flex-direction: row;*/
+}
+.draw{
+   grid-area: draw;
+}
+.imgDraw{
+   grid-area: imgDraw;
+    flex-direction: column;
+}
+.imgDraw2{
+   grid-area: imgDraw2;
+}
+.imgDraw3{
+   grid-area: imgDraw3;
+}
+.footer{
+   grid-area: footer;
+}
+
+.contenido_index{
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "sobremi sobremi sobremi sobremi sobremi sobremi"
+      "sobremi_text sobremi_text sobremi_text sobremi_text sobremi_text sobremi_text"
+      "tiktok_tit tiktok_tit tiktok_tit tiktok_tit tiktok_tit tiktok_tit"
+      "tiktok tiktok tiktok tiktok tiktok tiktok"
+      "videos_tit videos_tit videos_tit videos_tit videos_tit videos_tit"
+      "videos videos videos videos videos videos"
+      "footer footer footer footer footer footer";
+ grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto auto auto auto auto;
+}
+.header{
+   grid-area: header;
+  /* justify-content: center;
+ flex-direction: row;*/
+}
+.sobremi{
+   grid-area: sobremi;
+}
+.sobremi_text{
+   grid-area: sobremi_text;
+}
+.tiktok_tit{
+   grid-area: tiktok_tit;
+}
+.tiktok{
+   grid-area: tiktok;
+  /* flex-direction: column;*/
+}
+.videos{
+   grid-area: videos;
+    /*flex-direction: column;*/
+}
+.videos_tit{
+   grid-area: videos_tit;
+}
+.footer{
+   grid-area: footer
+}
